@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === ('can you do this')) {
-    msg.reply('https://www.youtube.com/watch?v=U-OeVWJ6nUk');
+  if (msg.content === ('!ping')) {
+    msg.reply('pong');
   }
 });
 
