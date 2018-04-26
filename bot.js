@@ -20,4 +20,12 @@ client.on('message', message => {
     message.reply('no u');
   }
 });
+
+client.on('ready', () => {
+  console.log('I am ready!');
+});
+let member = message.mentions.members.first();
+
+message.channel.send(`ID: ${member.user.id}`);
+
 client.login(process.env.BOT_TOKEN);
