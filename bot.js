@@ -11,4 +11,13 @@ client.on('message', message => {
   }
 });
 
+client.on('ready', () => {
+  console.log('I am ready!');
+});
+
+client.on('message', message => {
+  if (message.content === 'your mom gay') {
+    message.reply('no u');
+  }
+});
 client.login(process.env.BOT_TOKEN);
